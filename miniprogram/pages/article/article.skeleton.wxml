@@ -1,0 +1,37 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/7/3 上午9:47:34
+使用方法：
+在 D:\ActivityNewsAssistant\miniprogram\pages\article\article.wxml 引入模板
+
+```
+<import src="article.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\ActivityNewsAssistant\miniprogram\pages\article\article.wxss 中引入样式
+```
+@import "./article.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="article-box">
+      <view class="article-title sk-transparent sk-text-14-2857-422 sk-text" style="border: none;">(学生特惠16-23岁可以试试)1.99元撸同程旅行黑鲸年卡</view>
+      <view class="info-time">
+        <text class="sk-transparent sk-text-14-2857-321 sk-text">来源：网络论坛</text>
+        <text class="sk-transparent sk-text-14-2857-581 sk-text">更新时间：2021-07-03 08:10</text>
+      </view>
+      <image class="article-cover sk-image" mode="aspectFit"></image>
+      <view is="components/mp-weixin/index" class="article-content">
+        <view class="article-title sk-transparent sk-text-14-2857-422 sk-text" style="border: none;">(学生特惠16-23岁可以试试)1.99元撸同程旅行黑鲸年卡</view>
+        <view class="article-title sk-transparent sk-text-14-2857-422 sk-text" style="border: none;">(学生特惠16-23岁可以试试)1.99元撸同程旅行黑鲸年卡</view>
+        <view class="article-title sk-transparent sk-text-14-2857-422 sk-text" style="border: none;">(学生特惠16-23岁可以试试)1.99元撸同程旅行黑鲸年卡</view>
+        <view class="article-title sk-transparent sk-text-14-2857-422 sk-text" style="border: none;">(学生特惠16-23岁可以试试)1.99元撸同程旅行黑鲸年卡</view>
+
+      </view>
+      <button class="share-btn sk-transparent sk-button sk-pseudo sk-pseudo-circle" open-type="share">分享</button>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,5 @@
+<!--miniprogram/pages/auth/auth.wxml-->
+<view>
+<image></image>
+<button>授权登录</button>
+</view>

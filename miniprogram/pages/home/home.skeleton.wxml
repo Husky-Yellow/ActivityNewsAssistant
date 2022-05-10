@@ -1,0 +1,60 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/7/3 上午8:33:37
+使用方法：
+在 D:\ActivityNewsAssistant\miniprogram\pages\home\home.wxml 引入模板
+
+```
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\ActivityNewsAssistant\miniprogram\pages\home\home.wxss 中引入样式
+```
+@import "./home.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view>
+      <swiper autoplay="false" circular="true" indicator-dots="true" class="swiper-box" indicator-active-color="#003159" indicator-color="rgba(0, 49, 89, .2)" interval="3000" current="0">
+        <swiper-item>
+          <view class="swiper-item-box" data-id="{{item._id}}" catchtap="jumpDetailPage">
+            <image mode="aspectFit"></image>
+          </view>
+        </swiper-item>
+      </swiper>
+      <view class="article-list">
+        <view class="article-item" data-id="b00064a760dfaae5247f646d3681966d">
+          <text class="article-title sk-transparent sk-text-16-6667-799 sk-text">(学生特惠16-23岁可以试试)1.99元撸同程旅行黑鲸年卡</text>
+          <view class="desc">
+            <view class="text">
+              <text class="article-content sk-transparent sk-text-18-7500-843 sk-text">功能请看图不能领腾讯视频会员！不能领腾讯视频会员！不能领腾讯视频会员！wx扫码进入活动页面按照提示填写完成认证然后点击开通支付1.99元即可开完后去黑鲸会员全部权益查看（每月可领1张火车票券11-5元，打车券11-10元，酒店券150-20元等等）</text>
+              <text class="hightligh article-time sk-transparent sk-text-14-2857-177 sk-text">2021-07-03 08:10</text>
+            </view>
+            <image class="sk-image"></image>
+          </view>
+        </view>
+        <view class="article-item" data-id="28ee4e3e60decbb3270e5fa54c9810f7">
+          <text class="article-title sk-transparent sk-text-16-6667-778 sk-text">扫码领取25充30话费 免费领京东极速版5元话费券</text>
+          <view class="desc">
+            <view class="text">
+              <text class="article-content sk-transparent sk-text-18-7500-770 sk-text">免费领取京东极速版5元话费券 可25充30话费微信打开链接进入活动 就会有弹窗可免费领取话费券 可反复领取三次话费券第三次必中5元话费券 领取后需要到京东极速版APP充值使用！有需要的都去领取一下！复制链接：https://u.jd.com/6LtzOh7扫码：</text>
+              <text class="article-time sk-transparent sk-text-14-2857-251 sk-text">2021-07-02 16:17</text>
+            </view>
+            <image class="sk-image"></image>
+          </view>
+        </view>
+        <view class="article-item" data-id="79550af260dec991239ff2ea666ffe87">
+          <text class="article-title sk-transparent sk-text-16-6667-460 sk-text">百度地图App-车主特权V2领实物</text>
+          <view class="desc">
+            <view class="text">
+              <text class="article-content sk-transparent sk-text-18-7500-171 sk-text">打开百度地图App左上角头像-&amp;gt;车主特权-&amp;gt;专属特权点更多-&amp;gt;V2及以上的老司机可以直接领-&amp;gt;填写地址坐等到货！</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

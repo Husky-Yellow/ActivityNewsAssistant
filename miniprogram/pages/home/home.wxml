@@ -1,0 +1,34 @@
+<import src="home.skeleton.wxml" />
+<template is="skeleton" wx-if="{{skeletionLoading}}" />
+<view wx:else>
+  <!-- <input class="search-input" value="{{searchText}}" confirm-type="search" bindconfirm="" placeholder="搜索标题和内容关键字" /> -->
+  <swiper wx-if="{{carouselList.length}}" class="swiper-box" indicator-active-color="#003159"
+    indicator-color="rgba(0, 49, 89, .2)" autoplay indicator-dots interval="3000" circular>
+    <block wx:for="{{carouselList}}" wx:for-item="item" wx:key="_id">
+      <swiper-item>
+        <view class="swiper-item-box" data-id="{{item._id}}" catchtap="jumpDetailPage">
+          <image src="{{item.article_cover}}" mode="aspectFit"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="article-list">
+    <view wx:for="{{informationList}}" wx:for-item="item" wx:key="_id" data-id="{{item._id}}" catchtap="jumpDetailPage" class="article-item">
+        <text class="article-title">{{item.article_title}}</text>
+        <view class="desc">
+          <view class="text">
+            <text class="article-content">{{item.article_content}}</text>
+            <text class="{{item.updateDate === nowDate ? 'hightligh article-time' : 'article-time'}}">{{item.updateDate + ' ' + item.updateTime}}</text>
+          </view>
+          <image wx:if="{{item.article_cover}}" src="{{item.article_cover}}"></image>
+        </view>
+    </view>
+  </view>
+  <view wx-if="{{informationList.length}}" class="data-loading">
+    <block wx:if="{{isHasData}}">
+      <icon class="iconfont icon-loading"></icon>
+      <text>正在处理加载...</text>
+    </block>
+    <text wx:else>/(ㄒoㄒ)/~~都在这里了...</text>
+  </view>
+</view>

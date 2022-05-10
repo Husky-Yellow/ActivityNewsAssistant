@@ -1,0 +1,127 @@
+@import "./home.skeleton.wxss";
+
+.search-input {
+  margin: 20rpx;
+  border: 2rpx solid rgba(0, 49, 89, .3);
+  border-radius: 30rpx;
+  padding: 8rpx 20rpx;
+  font-size: 30rpx;
+  color: #003159;
+}
+
+.input-placeholder {
+  color: rgba(0, 49, 89, 0.4);
+  font-size: 28rpx;
+}
+
+.swiper-box {
+  display: block;
+  height: 360rpx;
+}
+
+.swiper-box .swiper-item-box {
+  height: 100%;
+  background: rgba(0,0,0, 0.5);
+}
+
+.swiper-box .swiper-item-box image {
+  width: 100%;
+  height: 100%;
+}
+
+.article-list {
+  padding: 30rpx;
+}
+
+.article-list .article-item {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  color: #003159;
+  margin-bottom: 30rpx;
+  box-shadow: 0rpx 4rpx 20rpx 0rpx rgba(0, 49, 89, 0.1);
+  border-radius: 20rpx;
+}
+
+.article-list .article-item:last-child {
+  margin-bottom: 0;
+}
+
+.article-list .article-item .desc {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.article-list .article-item .text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+  color: rgb(85, 104, 128);
+  justify-content: space-between;
+}
+
+.article-list .article-item image {
+  flex: 1;
+  height: 180rpx;
+}
+
+.article-list .article-item .article-title {
+  line-height: 1.5;
+  font-size: 30rpx;
+  display: -webkit-box;
+  /*设置为弹性盒子*/
+  -webkit-line-clamp: 2;
+  /*最多显示3行*/
+  overflow: hidden;
+  /*超出隐藏*/
+  text-overflow: ellipsis;
+  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  /*强制英文单词自动换行*/
+}
+
+.article-list .article-item .article-content {
+  line-height: 1.6;
+  font-size: 24rpx;
+  display: -webkit-box;
+  /*设置为弹性盒子*/
+  -webkit-line-clamp: 3;
+  /*最多显示3行*/
+  overflow: hidden;
+  /*超出隐藏*/
+  text-overflow: ellipsis;
+  /*超出显示为省略号*/
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  /*强制英文单词自动换行*/
+}
+
+.article-list .article-item .article-time {
+  font-size: 20rpx;
+  margin-top: 24rpx;
+}
+.article-list .article-item .article-time.hightligh {
+  color: #ff5a4c;
+}
+.data-loading {
+  display: flex;
+  justify-content: center;
+  color: #003159;
+  margin-bottom: 30rpx;
+}
+.data-loading .iconfont {
+  margin-right: 30rpx;
+  font-size: 36rpx;
+  animation:rotate 2s infinite linear;
+}
+
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+   }
+   100%{
+     transform:rotate(360deg);
+   }
+}

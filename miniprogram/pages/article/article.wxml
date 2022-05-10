@@ -1,0 +1,13 @@
+<!--miniprogram/pages/article/article.wxml-->
+<import src="article.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{skeletionLoading}}" />
+<view wx:else class="article-box">
+  <view class="article-title">{{articleInfo.article_title}}</view>
+  <view class="info-time">
+    <text>来源：网络论坛</text>
+    <text>更新时间：{{articleInfo.updateTime}}</text>
+  </view>
+  <image wx-if="{{articleInfo.article_cover}}" mode="aspectFit" bindtap="previewImage" class="article-cover" src="{{articleInfo.article_cover}}"></image>
+  <mp-html class="article-content" content="{{articleInfo.article_content}}" container-style="white-space: pre-wrap;" />
+  <button class="share-btn" open-type="share">分享</button>
+</view>

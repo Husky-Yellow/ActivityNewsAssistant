@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/article/article",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/auth/auth"
+  ],
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#003159",
+    "backgroundColor": "",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/icons/home.png",
+        "selectedIconPath": "/images/icons/home-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/icons/wo.png",
+        "selectedIconPath": "/images/icons/wo-selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#003159",
+    "navigationBarTitleText": "活动线报助手",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

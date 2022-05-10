@@ -1,0 +1,38 @@
+<!-- login.wxml -->
+<view class="my">
+  <view wx:if="{{userInfoData !== ''}}" bindtap="getUserProfile" class="user-info">
+    <view class="userinfo-avatar">
+      <image mode="aspectFit" src="{{userInfoData.avatarUrl}}"></image>
+    </view>
+    <view class="name">
+      <text>{{ userInfoData.nickName }}</text>
+      <button>点此修改头像、昵称</button>
+    </view>
+  </view>
+  <view wx:else="{{userInfoData === ''}}" bindtap="getUserProfile" class="user-info">
+    <view class="userinfo-avatar">
+      <icon class="iconfont icon-touxiang"></icon>
+    </view>
+    <view class="name">
+      <text>未登录</text>
+    </view>
+  </view>
+  <view class="menu">
+    <view class="item">
+      <view>
+        <icon class="iconfont icon-fankui"></icon>
+        反馈问题
+      </view>
+      <icon class="iconfont icon-youbian"></icon>
+      <button class="contact-btn" open-type="feedback" />
+    </view>
+    <view class="item">
+      <view>
+        <icon class="iconfont icon-weixin"></icon>
+        联系作者
+      </view>
+      <icon class="iconfont icon-youbian"></icon>
+      <button class="contact-btn" open-type="contact" />
+    </view>
+  </view>
+</view>
